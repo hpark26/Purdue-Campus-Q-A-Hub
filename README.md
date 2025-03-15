@@ -15,7 +15,7 @@ A **React-based Single Page Application (SPA)** that enables Purdue University s
 - **Frontend**: React.js, React Router, Tailwind CSS
 - **Backend**: Firebase Firestore (NoSQL database)
 - **Authentication**: Firebase Authentication
-- **Deployment**: Vercel / Netlify (Optional)
+- **Deployment**: Firebase Hosting
 
 ## 🔧 Installation & Setup
 
