@@ -1,0 +1,20 @@
+/* src/components/Footer.css */
+
+.footer-minimal {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 20px 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    margin-top: auto;
+  }
+  
+  .footer-minimal div {
+    color: #999;
+  }
+  
+  .footer-minimal span {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* 배경: 골드색, 왼쪽 로고 + 중앙 검색 + 오른쪽 프로필 버튼 */
+.top-header {
+  background-color: #cfb53b; /* Purdue Gold */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.welcome-text {
+  font-family: 'Montserrat', sans-serif; /* 동일 폰트 */
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.header-btn {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.header-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.logo-text {
+  font-family: "Lobster", cursive; 
+  font-size: 1.8rem;
+  color: black;
+}
+
+.search-bar {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px; 
+  padding: 5px 15px;   
+  width: 300px;        
+}
+
+.search-icon {
+  color: #999;
+  margin-right: 8px;
+  /* 
+     position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  */
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.profile-btn {
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}

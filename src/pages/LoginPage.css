@@ -1,0 +1,49 @@
+/* src/pages/LoginPage.css */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .auth-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .auth-form input {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  .auth-btn {
+    padding: 10px;
+    background-color: #cfb53b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .toggle-section {
+    margin-top: 20px;
+  }
+  .toggle-section button {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
