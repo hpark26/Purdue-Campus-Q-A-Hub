@@ -1,20 +1,42 @@
 /* src/components/Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-.footer-minimal {
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 20px 0;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
-    margin-top: auto;
-  }
-  
-  .footer-minimal div {
-    color: #999;
-  }
-  
-  .footer-minimal span {
-    margin: 0 5px;
-    cursor: pointer;
-  }
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 24px 0;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-right {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #cfb53b;
+  transform: translateY(-3px);
+}
   

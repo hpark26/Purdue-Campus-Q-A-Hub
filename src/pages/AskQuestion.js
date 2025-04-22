@@ -18,7 +18,19 @@ function AskQuestion() {
   const [showQuestions, setShowQuestions] = useState(false); // 게시물 목록 표시 여부
   const [currentUser, setCurrentUser] = useState(null);
 
-  const tags = ["General", "Campus Life", "Technical Support", "Career", "Community"];
+  const tags = [
+    "General", 
+    "Campus Life", 
+    "Academic", 
+    "Technical Support", 
+    "Career", 
+    "Dining", 
+    "Housing", 
+    "Books & Resources", 
+    "Sports & Recreation", 
+    "Transportation", 
+    "Freshman Advice"
+  ];
 
   // 로그인 상태 감지
   useEffect(() => {
@@ -68,7 +80,11 @@ function AskQuestion() {
     }
 
     try {
-      await addDoc(collection(db, "questions"), {
+      console.log("Attempting to add new question to Firestore...");
+      console.log("Current user:", auth.currentUser.email);
+      console.log("User display name:", auth.currentUser.displayName);
+      
+      const docRef = await addDoc(collection(db, "questions"), {
         title: title,
         body: body,
         tag: selectedTag,
@@ -79,7 +95,8 @@ function AskQuestion() {
         dislikeCount: 0,
         replyCount: 0
       });
-
+      
+      console.log("Document added with ID:", docRef.id);
       alert("Question posted successfully!");
       setTitle("");
       setBody("");
@@ -87,7 +104,7 @@ function AskQuestion() {
       handleTagClick(selectedTag); // 해당 태그의 질문 목록 다시 불러오기
     } catch (error) {
       console.error("Error adding document:", error);
-      alert("Failed to post. Check console for details.");
+      alert("Failed to post. Check console for details: " + error.message);
     }
   };
 
